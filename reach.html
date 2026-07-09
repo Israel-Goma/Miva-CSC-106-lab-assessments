@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Israel Goma</title>
+  <meta name="description" content="Get in touch with Israel Goma via email, GitHub, or LinkedIn." />
+  <link rel="stylesheet" href="assets/styles/main.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="wrap site-nav__inner">
+      <a href="index.html" class="site-nav__brand">Israel <em>Goma</em></a>
+      <button class="site-nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav__menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="profile.html">About</a>
+        <a href="work.html">Projects</a>
+        <a href="organizer.html">Planner</a>
+        <a href="reach.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="reach-intro">
+      <div class="wrap">
+        <p class="kicker">Contact</p>
+        <h1>Let's connect.</h1>
+        <p class="lede">
+          Whether it's about an internship, a collaboration, or just to say hi — feel
+          free to reach out through any of the channels below.
+        </p>
+
+        <form id="reach-form" class="reach-form" novalidate>
+          <div class="reach-field" id="reach-name-field">
+            <label for="reach-name">Name</label>
+            <input type="text" id="reach-name" name="name" autocomplete="name" aria-describedby="reach-name-note" />
+            <span class="reach-field__note" id="reach-name-note"></span>
+          </div>
+
+          <div class="reach-field" id="reach-email-field">
+            <label for="reach-email">Email</label>
+            <input type="email" id="reach-email" name="email" autocomplete="email" aria-describedby="reach-email-note" />
+            <span class="reach-field__note" id="reach-email-note"></span>
+          </div>
+
+          <div class="reach-field" id="reach-phone-field">
+            <label for="reach-phone">Phone (digits only)</label>
+            <input type="tel" id="reach-phone" name="phone" autocomplete="tel" aria-describedby="reach-phone-note" />
+            <span class="reach-field__note" id="reach-phone-note"></span>
+          </div>
+
+          <div class="reach-field" id="reach-message-field">
+            <label for="reach-message">Message</label>
+            <textarea id="reach-message" name="message" aria-describedby="reach-message-note"></textarea>
+            <span class="reach-field__note" id="reach-message-note"></span>
+          </div>
+
+          <div>
+            <button type="submit" class="action action--solid">Send Message</button>
+            <p class="reach-status" id="reach-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <hr class="reach-divider" />
+
+        <div class="reach-cards">
+          <div class="reach-card">
+            <h2>Email</h2>
+            <p id="reach-email-value">israel.goma@example.com</p>
+            <div class="reach-card__actions">
+              <a href="mailto:israel.goma@example.com" class="action action--solid">Send Email</a>
+              <button type="button" class="action action--ghost" id="copy-trigger" data-email="israel.goma@example.com">
+                Copy Address
+              </button>
+            </div>
+            <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="reach-card">
+            <h2>GitHub</h2>
+            <p>@israelgoma</p>
+            <a href="https://github.com/israelgoma" class="action action--ghost" target="_blank" rel="noopener noreferrer">
+              github.com/israelgoma
+            </a>
+          </div>
+
+          <div class="reach-card">
+            <h2>LinkedIn</h2>
+            <p>Israel Goma</p>
+            <a href="https://www.linkedin.com/in/israel-goma" class="action action--ghost" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/israel-goma
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="site-foot__links">
+        <a href="https://github.com/israelgoma" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/israel-goma" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:israel.goma@example.com">Email</a>
+      </div>
+      <p>&copy; 2026 Israel Goma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/navigation.js"></script>
+  <script src="assets/scripts/message-form.js"></script>
+</body>
+</html>

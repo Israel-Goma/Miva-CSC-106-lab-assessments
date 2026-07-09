@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner — Israel Goma</title>
+  <meta name="description" content="A lightweight academic task organizer for tracking assignments, deadlines, and study sessions." />
+  <link rel="stylesheet" href="assets/styles/main.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="wrap site-nav__inner">
+      <a href="index.html" class="site-nav__brand">Israel <em>Goma</em></a>
+      <button class="site-nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav__menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="profile.html">About</a>
+        <a href="work.html">Projects</a>
+        <a href="organizer.html">Planner</a>
+        <a href="reach.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="organizer-intro">
+      <div class="wrap">
+        <p class="kicker">Academic Planner</p>
+        <h1>Stay on top of your coursework.</h1>
+        <p class="lede">
+          Add assignments, readings, and study sessions below. Tasks are saved in your
+          browser, so they'll be here next time you visit this page on this device.
+        </p>
+      </div>
+    </section>
+
+    <section class="organizer-app">
+      <div class="wrap">
+        <form id="organizer-form" class="organizer-form">
+          <input
+            type="text"
+            id="organizer-title"
+            placeholder="Task, e.g. 'Finish Data Structures assignment'"
+            aria-label="Task title"
+            required
+          />
+          <input
+            type="date"
+            id="organizer-due"
+            aria-label="Due date"
+          />
+          <select id="organizer-priority" aria-label="Priority">
+            <option value="low">Low </option>
+            <option value="medium" selected>Mid</option>
+            <option value="high">High</option>
+          </select>
+          <button type="submit" class="action action--solid">Add Task</button>
+        </form>
+
+        <div class="organizer-toolbar">
+          <div class="organizer-filters" role="group" aria-label="Filter tasks">
+            <button type="button" class="filter-chip is-active" data-filter="all">All</button>
+            <button type="button" class="filter-chip" data-filter="active">Active</button>
+            <button type="button" class="filter-chip" data-filter="done">Completed</button>
+          </div>
+          <button type="button" class="action action--ghost" id="organizer-clear">Clear Completed</button>
+        </div>
+
+        <ul id="organizer-list" class="organizer-list"></ul>
+
+        <p id="organizer-empty" class="organizer-empty">No tasks yet — add your first one above.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="site-foot__links">
+        <a href="https://github.com/israelgoma" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/israel-goma" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:israel.goma@example.com">Email</a>
+      </div>
+      <p>&copy; 2026 Israel Goma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/navigation.js"></script>
+  <script src="assets/scripts/task-organizer.js"></script>
+</body>
+</html>
